@@ -345,7 +345,31 @@ export default function Footer({ categories = [] }: { categories?: Category[] })
                   Brands
                 </Link>
               </li>
-              {categories.map((category) => (
+              <li>
+                <Link
+                  className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                  href="/categories"
+                >
+                  Electronics
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                  href="/categories"
+                >
+                  Men's Fashion
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                  href="/categories"
+                >
+                  Women's Fashion
+                </Link>
+              </li>
+              {/* {categories.map((category) => (
                 <li key={category._id}>
                   <Link
                     className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
@@ -354,7 +378,7 @@ export default function Footer({ categories = [] }: { categories?: Category[] })
                     {category.name}
                   </Link>
                 </li>
-              ))}
+              ))} */}
             </ul>
           </div>
 
